@@ -1,28 +1,33 @@
-.item {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 10px;
+.contactList {
+  margin-top: 20px;
 }
 
-.text {
+.contactItem:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.contactName {
   margin-right: 15px;
 
   font-size: 18px;
   font-weight: 500;
 }
 
-.button {
-  width: fit-content;
-  background-color: white;
-  border: 0.5px solid black;
-  border-radius: 4px;
-  height: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.contactNumber {
+  margin-right: 15px;
 }
 
-.button:hover {
-  background-color: rgba(34, 236, 186, 0.678);
+.contactButton {
+   width: fit-content;
+   background-color: white;
+   border: 0.5px solid black;
+   border-radius: 4px;
+   height: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contactButton:hover {
+  background-color: rgba(39, 233, 152, 0.678);
   color: white;
   border: transparent;
 }

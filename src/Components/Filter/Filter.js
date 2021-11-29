@@ -1,24 +1,22 @@
-import s from "./Filter.module.css";
 import PropTypes from "prop-types";
+import s from "./Filter.module.css";
 
-function Filter({ filter, onFilterChange }) {
+function Filter({ onChange }) {
   return (
-    <label className={s.label}>
+    <label className={s.filter}>
       Find contacts by name
       <input
-        className={s.input}
         type="text"
-        name="name"
-        value={filter}
-        onChange={onFilterChange}
+        name="filter"
+        onChange={onChange}
+        className={s.filterInput}
       />
     </label>
   );
 }
 
 Filter.propTypes = {
-  onFilterChange: PropTypes.func,
-  filter: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default Filter;
